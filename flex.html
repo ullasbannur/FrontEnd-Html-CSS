@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    @media screen and (min-width:300px){
+
+        .container
+        {
+            width: 400px;
+            height: auto;
+            background-color: rgb(162, 131, 131);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding: 30px;
+            
+        }
+        .top{
+            width: inherit;
+            height:auto;
+            background-color: burlywood;
+           margin: 20px auto ;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           
+        }
+        .child{
+            width: 100px;
+            height:100px;
+            background-color: beige;
+            margin: 30px;
+        }
+    
+
+    }
+
+    @media screen and (min-width:1200px){
+            
+            .container
+            {
+                width: 450px;
+                height: auto;
+                background-color: rgb(162, 131, 131);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                padding: 30px;
+                
+            }
+            .top{
+                width: 100%;
+                height:inherit;
+                background-color: burlywood;
+               margin: 20px auto ;
+               display: flex;
+                flex-wrap: wrap;
+               justify-content: space-around;
+    
+            }
+            .child{
+                width: 100px;
+                height:100px;
+                background-color: beige;
+                margin: 10px;
+                /* flex-wrap: wrap;  */
+            }
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="top">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

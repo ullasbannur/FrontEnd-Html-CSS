@@ -1,0 +1,357 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>My Resume</title>
+    
+
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: rgb(176, 176, 176);
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            min-height: 100vh;
+        }   
+        .container{
+            position: relative;
+            width: 100%;
+            width: 900px;
+            min-height: 1000px;
+            
+            margin:50px;
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0,0,0,0.6);
+        }
+        .container .left{
+            position: relative;
+            background-color: #255dcd;
+            padding: 40px;
+           
+        }
+
+        .container .right{
+            position: relative;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .profileText{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #255dcd;
+        }
+
+        .profileText .profileImage{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profileText .profileImage img{
+            position: absolute;
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+
+        .profileText h2{
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+            text-shadow: -1px 1px 4px black;
+        }
+
+        .profileText h2 span{
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+
+        .Info{
+            padding: 10px;
+        }
+
+        .title{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.4px; 
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        .Info ul li{
+            position: relative;
+            list-style: none;
+            margin: 10px;
+        }
+
+        .Info ul li .icon{
+            display: inline-block;
+            width: 30px;
+            font-size: 20px;
+            color: #031412;
+        }
+
+        .Info ul li a{
+            color:white;
+            text-decoration: none;
+            font-weight: 200;
+        }
+
+        .Info ul li span{
+            color: #fff;
+            font-weight: 200;
+        }
+
+        .Hobbies ul li{
+            position:relative;
+            list-style: none;
+            margin:10px;
+        }
+
+        .Hobbies ul li span{
+            color: #fff;
+            font-weight: 200;
+        }
+        .Hobbies ul li .icon{
+            display: inline-block;
+            width: 30px;
+            font-size: 20px;
+            color: #161717;
+        }
+
+        .right .summary{
+            width:100%;
+            height:200px;
+            padding:20px;
+        }
+
+        .right .summaryTitle{
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #071513
+        }
+        .right .text1{
+            font-weight: 600;
+            color: #090d0c;
+            text-align: justify;
+            text-justify:inter-word ;
+        }
+
+        .right .educationTitle{
+            font-weight: 600;
+            margin-top: -20px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: #090e0d
+        }
+        .right .Education{
+            width:100%;
+            height:200px;
+            padding:20px;
+        }
+        h4{
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #0b100f
+        }
+
+        .EducationDetails{
+            display:flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: flex-start; 
+            width: 100%;
+        }
+        p{
+            font-weight: 200;
+            color: #080f0e;
+            margin: 0; 
+        }
+        .left-info{
+            text-align: left;  
+        }
+        .right-info{
+            margin-top:21px;
+            text-align: right;
+        }
+        .date, .marks {
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+        }
+        .right .project{
+            width:100%;
+            height:600px;
+            padding:20px;
+            margin-top: 100px;
+        }
+
+        .projectTitle{
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #000101
+        }
+        .project1{
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #000000
+        }
+        .project .text2{
+            font-weight:400;
+            text-align: justify;
+            color:#000000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="profileText">
+                <div class="profileImage">
+                    <img src="UllasPhto.jpg" alt="Image">
+                </div>
+                <h2>Ullas BANNUR </h2>
+            </div>
+            <div class="Info">
+                <h3 class="title">Contact Information</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                        <span class="text">7899106491</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                        <span class="text">ullasbannur03@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+                        <a href="https://github.com/ullasbannur">GitHub</a>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                        <a href="https://www.linkedin.com/in/ullas-bannur-8330bb203/">Linkedin</a>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                        <span class="text">Karnataka, India</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="Hobbies">
+                <h3 class="title">Hobbies</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="basketball-outline"></ion-icon></span>
+                        <span class="text">Sports</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="text">Standup Comedies</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="logo-amazon"></ion-icon></span>
+                        <span class="text">Web Series</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
+                        <span class="text">Travelling</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right"> 
+            <div class="summary">
+                <h3 class="summaryTitle">About Me</h3>
+                <div class="text1">A passionate and dedicated individual with a strong background in engineering and coding. I recently graduated with a degree in engineering and have actively participated in coding hackathons, securing 2nd place in a team-based competition. With a keen interest in software development.</div>
+            </div>
+             
+            <div class="Education">
+                <h3 class="educationTitle">Education</h3>
+                <div class="EducationDetails">
+                    <div class="left-info">
+                        <h4>SAHYADRI COLLEGE OF ENGINEERING AND MANAGEMENT</h4>
+                        <p><strong>Bachelor of Computer Science and Engineering</strong></p>
+                    </div>
+                    <div class="right-info">
+                        <p><span class="date"><em>June 2020 - May 2024</em></span></p>
+                        <p><span class="marks"><em>7.6</em></span></p>
+                    </div>
+                </div>
+                
+                <div class="EducationDetails">
+                    <div class="left-info">
+                        <h4>Kendriya Vidyalaya</h4>
+                        <p><strong>12th, PCMC</strong></p>
+                    </div>
+                    <div class="right-info">
+                        <p><span class="date"><em>March 2018 - May 2020</em></span></p>
+                        <p><span class="marks"><em>75%</em></span></p>
+                    </div>
+                </div>
+                <div class="EducationDetails">
+                    <div class="left-info">
+                        <h4>Kendriya Vidyalaya</h4>
+                        <p><strong>10th, PCMB</strong></p>
+                    </div>
+                    <div class="right-info">
+                        <p><span class="date"><em>March 2015 - February 2018</em></span></p>
+                        <p><span class="marks"><em>80.2%</em></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h3 class="projectTitle">Projects</h3>
+                <h4 class="project1">Task Tracker App - Java Firebase</h4>
+                <div class="text2">Developed an app to provide a user-friendly platform for easily creating, assigning, and tracking tasks,
+                    resulting in streamlined task management processes within teams.Utilized Firebase backend for real-time data sync and reliability and Android Studio as frontend.</div>
+                <h4 class="project1">Retinal Disease Detection - Python</h4>
+                <div class="text2">Designed a automated system to detect type of retinal disease using OCT images.Developed a deep learning model using InceptionNet, DenseNet, ResNEt to validate the accuracy.Implemented using TensorFlow and Streamlit Python libraries in Jupyter Notebook.</div>
+                <h4 class="project1">Zoo Management System - Java MySql</h4>
+                <div class="text2">Developed a Zoo Management System application utilizing Netbeans as frontend and MySQL as
+                    backend, aimed at efficiently overseeing zoo operations. Key focus lies in reducing time consumption associated with manual processes, thereby enhancing
+                    operational efficiency and management effectiveness.
+                </div>
+                <h4 class="project1">Delivery Mapping System - Python</h4>
+                <div class="text2">The aim of the system is to optimize delivery logistics which selects the shortest path to the nearest
+                    service provider, thereby reducing delivery time.Implemented using folium Python library as part of an inter-college hackathon hosted by SOSC.
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
+ 
